@@ -1,0 +1,33 @@
+\ProvidesPackage{mystyle}
+
+\RequirePackage{xcolor}
+\RequirePackage{pagecolor}
+
+% Catppuccin Mocha colors
+\definecolor{mocha-base}{HTML}{1e1e2e}
+\definecolor{mocha-text}{HTML}{cdd6f4}
+\definecolor{mocha-subtext}{HTML}{a6adc8}
+\definecolor{mocha-surface2}{HTML}{585b70}
+\definecolor{mocha-surface1}{HTML}{45475a}
+\definecolor{mocha-surface0}{HTML}{313244}
+\definecolor{mocha-overlay2}{HTML}{9399b2}
+\definecolor{mocha-overlay1}{HTML}{7f849c}
+\definecolor{mocha-overlay0}{HTML}{6c7086}
+
+% Set page color and text color
+\pagecolor{mocha-base}
+\color{mocha-text}
+
+% Section styling
+\RequirePackage{sectsty}
+\sectionfont{\color{mocha-subtext}}
+\subsectionfont{\color{mocha-overlay2}}
+
+% Links styling
+\RequirePackage{hyperref}
+\hypersetup{
+    colorlinks=true,
+    linkcolor=mocha-overlay1,
+    filecolor=mocha-overlay1,
+    urlcolor=mocha-overlay1,
+}
